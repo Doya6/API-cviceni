@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Počasí</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="css/weather-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h1>Počasí</h1>
+
+    <div class="container">
+
+      <nav class="navPanel">
+          <button class="marker" id="actPosition"><i class="fas fa-map-marker-alt"></i></button>
+          <button id="city1">Praha</button>
+          <button id="city2">New York</button>
+          <button id="city3">Sydney</button>
+      </nav>
+      
+      <div class="weather">
+          <div id="actCity">misto</div>
+          
+          <div class="upperBlock">
+            <div class="smallBlock">
+              <span id="temper">temper</span>°C
+              <div class="hodnota" id="popis">popis</div>
+            </div>
+            <div id="weatherIcon">pocasiIcon</div>
+          </div>
+
+          <div class="lowerBlock1">
+              <div class="smallBlock">
+                <div class="popisek">Vítr</div>
+                <span class="hodnota" id="wind">vitr</span>km/h
+              </div>
+              <div class="smallBlock">
+                <div class="popisek">Vlhkost</div>
+                <span class="hodnota" id="humidity">vlhkost</span>%
+              </div>
+          </div>
+          <div class="lowerBlock2"></div>
+              <div class="smallBlock">
+                <div class="popisek">Východ slunce</div>
+                <div class="hodnota" id="sunrise">vychod</div>
+              </div>
+              <div class="smallBlock">
+                <div class="popisek">Západ slunce</div>
+                <div class="hodnota" id="sunset">zapad</div>
+              </div>
+          </div>
+                    <div class="forecastBlock">
+                      <div id="day">--</div>
+                      <div id="forecastIcon">--</div>
+                      <span id="forecastTemper">--</span>°C
+                    </div>
+          </div>
+          <button class="roletka"></button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="weather-icons.js"></script>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
